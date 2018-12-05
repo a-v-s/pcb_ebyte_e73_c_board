@@ -146,23 +146,23 @@ Wire Wire Line
 Wire Wire Line
 	10000 1450 10000 1550
 $Comp
-L Device:CP_Small C2
+L Device:C_Small C2
 U 1 1 5BE5BA2C
 P 10600 1350
 F 0 "C2" H 10688 1396 50  0000 L CNN
 F 1 "2u2" H 10688 1305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 10600 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10600 1350 50  0001 C CNN
 F 3 "~" H 10600 1350 50  0001 C CNN
 	1    10600 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C1
+L Device:C_Small C1
 U 1 1 5BE5BA7E
 P 9450 1350
 F 0 "C1" H 9538 1396 50  0000 L CNN
 F 1 "1u" H 9538 1305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 9450 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9450 1350 50  0001 C CNN
 F 3 "~" H 9450 1350 50  0001 C CNN
 	1    9450 1350
 	1    0    0    -1  
@@ -217,17 +217,6 @@ Wire Wire Line
 	10600 1150 10600 1250
 Wire Wire Line
 	10300 1150 10600 1150
-$Comp
-L Regulator_Linear:AP2204R-3.3 U2
-U 1 1 5BE5DFF3
-P 10000 1150
-F 0 "U2" H 10000 1392 50  0000 C CNN
-F 1 "AP2204R-3.3" H 10000 1301 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 10000 1375 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 10000 1150 50  0001 C CNN
-	1    10000 1150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5BE6FC55
@@ -570,24 +559,13 @@ Text GLabel 7050 2350 2    50   Input ~ 0
 38
 Text GLabel 4550 2900 2    50   Input ~ 0
 24
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J9
-U 1 1 5BE9D715
-P 9350 5750
-F 0 "J9" H 9400 5967 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 9400 5876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 9350 5750 50  0001 C CNN
-F 3 "~" H 9350 5750 50  0001 C CNN
-	1    9350 5750
-	1    0    0    -1  
-$EndComp
-Text GLabel 9150 5850 0    50   Input ~ 0
+Text GLabel 9300 6200 0    50   Input ~ 0
 0
-Text GLabel 9150 5750 0    50   Input ~ 0
+Text GLabel 9300 5900 0    50   Input ~ 0
 1
-Text GLabel 9650 5750 2    50   Input ~ 0
+Text GLabel 9600 5900 2    50   Input ~ 0
 XL1
-Text GLabel 9650 5850 2    50   Input ~ 0
+Text GLabel 9600 6200 2    50   Input ~ 0
 XL2
 $Comp
 L Device:Crystal Y1
@@ -717,4 +695,37 @@ Wire Wire Line
 Wire Wire Line
 	8600 2750 8600 3150
 Connection ~ 8600 3150
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U2
+U 1 1 5C08064D
+P 10000 1150
+F 0 "U2" H 10000 1392 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 10000 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10000 1375 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 10000 1150 50  0001 C CNN
+	1    10000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5C080CE5
+P 9450 5900
+F 0 "JP1" H 9450 6105 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 9450 6014 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 9450 5900 50  0001 C CNN
+F 3 "~" H 9450 5900 50  0001 C CNN
+	1    9450 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 5C080D8A
+P 9450 6200
+F 0 "JP2" H 9450 6405 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 9450 6314 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 9450 6200 50  0001 C CNN
+F 3 "~" H 9450 6200 50  0001 C CNN
+	1    9450 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
