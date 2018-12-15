@@ -33,21 +33,21 @@ Text GLabel 4550 1400 2    50   Input ~ 0
 SWDIO
 Text GLabel 3950 850  2    50   Input ~ 0
 VDD
-Text GLabel 6150 2650 2    50   Input ~ 0
+Text GLabel 7050 1250 2    50   Input ~ 0
 VDD
-Text GLabel 6150 2750 2    50   Input ~ 0
+Text GLabel 7050 1350 2    50   Input ~ 0
 VDD
-Text GLabel 7050 2650 2    50   Input ~ 0
+Text GLabel 6150 1250 2    50   Input ~ 0
 VDD
-Text GLabel 7050 2750 2    50   Input ~ 0
+Text GLabel 6150 1350 2    50   Input ~ 0
 VDD
-Text GLabel 7050 2850 2    50   Input ~ 0
+Text GLabel 6150 1050 2    50   Input ~ 0
 GND
-Text GLabel 7050 2950 2    50   Input ~ 0
+Text GLabel 6150 1150 2    50   Input ~ 0
 GND
-Text GLabel 6150 2850 2    50   Input ~ 0
+Text GLabel 7050 1050 2    50   Input ~ 0
 GND
-Text GLabel 6150 2950 2    50   Input ~ 0
+Text GLabel 7050 1150 2    50   Input ~ 0
 GND
 $Comp
 L Connector:Conn_01x20_Male J1
@@ -71,26 +71,26 @@ F 3 "~" H 6850 1950 50  0001 C CNN
 	1    6850 1950
 	1    0    0    -1  
 $EndComp
-Text GLabel 7050 2550 2    50   Input ~ 0
+Text GLabel 5950 3350 0    50   Input ~ 0
 5V
 $Comp
-L Connector:Conn_01x04_Male J3
+L Connector_Generic:Conn_01x05 J3
 U 1 1 5BE5AC20
-P 7900 1150
-F 0 "J3" H 8006 1428 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 8006 1337 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7900 1150 50  0001 C CNN
-F 3 "~" H 7900 1150 50  0001 C CNN
-	1    7900 1150
+P 8400 1350
+F 0 "J3" H 8400 1850 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 8400 1750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8400 1350 50  0001 C CNN
+F 3 "~" H 8400 1350 50  0001 C CNN
+	1    8400 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 8100 1050 2    50   Input ~ 0
+Text GLabel 8200 1150 0    50   Input ~ 0
 SWDIO
-Text GLabel 8100 1150 2    50   Input ~ 0
+Text GLabel 8200 1250 0    50   Input ~ 0
 GND
-Text GLabel 8100 1250 2    50   Input ~ 0
+Text GLabel 8200 1350 0    50   Input ~ 0
 SWDCLK
-Text GLabel 8100 1350 2    50   Input ~ 0
+Text GLabel 8200 1450 0    50   Input ~ 0
 VDD
 $Comp
 L power:GND #PWR0101
@@ -151,7 +151,7 @@ U 1 1 5BE5BA2C
 P 10600 1350
 F 0 "C2" H 10688 1396 50  0000 L CNN
 F 1 "2u2" H 10688 1305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10600 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10600 1350 50  0001 C CNN
 F 3 "~" H 10600 1350 50  0001 C CNN
 	1    10600 1350
 	1    0    0    -1  
@@ -162,7 +162,7 @@ U 1 1 5BE5BA7E
 P 9450 1350
 F 0 "C1" H 9538 1396 50  0000 L CNN
 F 1 "1u" H 9538 1305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9450 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9450 1350 50  0001 C CNN
 F 3 "~" H 9450 1350 50  0001 C CNN
 	1    9450 1350
 	1    0    0    -1  
@@ -194,23 +194,6 @@ Wire Wire Line
 	3650 3450 3650 3100
 Wire Wire Line
 	3450 1050 3450 1000
-$Comp
-L Connector:Conn_01x03_Male J4
-U 1 1 5BE5B528
-P 8050 1900
-F 0 "J4" H 8156 2178 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 8156 2087 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8050 1900 50  0001 C CNN
-F 3 "~" H 8050 1900 50  0001 C CNN
-	1    8050 1900
-	1    0    0    -1  
-$EndComp
-Text GLabel 8250 1800 2    50   Input ~ 0
-VEXT
-Text GLabel 8250 1900 2    50   Input ~ 0
-VDD
-Text GLabel 8250 2000 2    50   Input ~ 0
-GND
 Wire Wire Line
 	10000 1550 10600 1550
 Wire Wire Line
@@ -247,7 +230,7 @@ U 1 1 5BE7112F
 P 7900 2500
 F 0 "R1" H 7970 2546 50  0000 L CNN
 F 1 "10K" H 7970 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7830 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7830 2500 50  0001 C CNN
 F 3 "~" H 7900 2500 50  0001 C CNN
 	1    7900 2500
 	1    0    0    -1  
@@ -290,7 +273,7 @@ U 1 1 5BE59D93
 P 3700 700
 F 0 "L2" V 3522 700 50  0000 C CNN
 F 1 "10u" V 3613 700 50  0000 C CNN
-F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3700 700 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 3700 700 50  0001 C CNN
 F 3 "~" H 3700 700 50  0001 C CNN
 	1    3700 700 
 	0    1    1    0   
@@ -315,25 +298,23 @@ D-
 Text GLabel 3450 1000 1    50   Input ~ 0
 D+
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J6
+L Connector_Generic:Conn_01x04 J6
 U 1 1 5BE751CC
 P 10100 2500
 F 0 "J6" H 10150 2817 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 10150 2726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10100 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10100 2500 50  0001 C CNN
 F 3 "~" H 10100 2500 50  0001 C CNN
 	1    10100 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 9900 2400 0    50   Input ~ 0
-VBUS
 Text GLabel 9900 2500 0    50   Input ~ 0
-VDDH
-Text GLabel 9900 2600 0    50   Input ~ 0
-VDD
-Text GLabel 10400 2500 2    50   Input ~ 0
 VEXT
-Text GLabel 10400 2400 2    50   Input ~ 0
+Text GLabel 9900 2600 0    50   Input ~ 0
+VDDH
+Text GLabel 9900 2700 0    50   Input ~ 0
+VDD
+Text GLabel 9900 2400 0    50   Input ~ 0
 LDO_IN
 Text GLabel 9450 1050 0    50   Input ~ 0
 LDO_IN
@@ -376,20 +357,9 @@ Wire Wire Line
 Wire Wire Line
 	9900 4050 9950 4050
 Connection ~ 9950 4050
-$Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5BE74160
-P 8100 3750
-F 0 "J7" H 8206 3928 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 8206 3837 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 3750 50  0001 C CNN
-F 3 "~" H 8100 3750 50  0001 C CNN
-	1    8100 3750
-	1    0    0    -1  
-$EndComp
-Text GLabel 8300 3750 2    50   Input ~ 0
+Text GLabel 8200 4150 0    50   Input ~ 0
 !RST
-Text GLabel 8300 3850 2    50   Input ~ 0
+Text GLabel 8500 4150 2    50   Input ~ 0
 18
 Text GLabel 4700 1250 2    50   Input ~ 0
 18
@@ -443,97 +413,93 @@ Wire Wire Line
 	4850 2300 4900 2300
 Text GLabel 4550 1700 2    50   Input ~ 0
 42
-Text GLabel 6150 2550 2    50   Input ~ 0
+Text GLabel 6150 2950 2    50   Input ~ 0
 42
 Text GLabel 4550 1800 2    50   Input ~ 0
 41
-Text GLabel 6150 2450 2    50   Input ~ 0
+Text GLabel 6150 2850 2    50   Input ~ 0
 41
-Text GLabel 6150 2350 2    50   Input ~ 0
+Text GLabel 6150 2750 2    50   Input ~ 0
 3
 Text GLabel 2800 1600 0    50   Input ~ 0
 3
 Text GLabel 4550 2700 2    50   Input ~ 0
 28
-Text GLabel 6150 2250 2    50   Input ~ 0
+Text GLabel 6150 2650 2    50   Input ~ 0
 28
 Text GLabel 4550 1600 2    50   Input ~ 0
 44
-Text GLabel 6150 2150 2    50   Input ~ 0
+Text GLabel 6150 2550 2    50   Input ~ 0
 44
 Text GLabel 2800 1500 0    50   Input ~ 0
 2
-Text GLabel 6150 2050 2    50   Input ~ 0
+Text GLabel 6150 2450 2    50   Input ~ 0
 2
-Text GLabel 6150 1950 2    50   Input ~ 0
+Text GLabel 6150 2350 2    50   Input ~ 0
 29
 Text GLabel 4550 2600 2    50   Input ~ 0
 29
 Text GLabel 4550 2400 2    50   Input ~ 0
 31
-Text GLabel 6150 1850 2    50   Input ~ 0
+Text GLabel 6150 2250 2    50   Input ~ 0
 31
 Text GLabel 4550 2500 2    50   Input ~ 0
 30
-Text GLabel 6150 1750 2    50   Input ~ 0
+Text GLabel 6150 2150 2    50   Input ~ 0
 30
-Text GLabel 6150 1650 2    50   Input ~ 0
-0
 Text GLabel 2800 1300 0    50   Input ~ 0
-0
+XL1
 Text GLabel 2800 1400 0    50   Input ~ 0
-1
-Text GLabel 6150 1450 2    50   Input ~ 0
-1
+XL2
 Text GLabel 4550 2800 2    50   Input ~ 0
 26
-Text GLabel 6150 1550 2    50   Input ~ 0
+Text GLabel 6150 2050 2    50   Input ~ 0
 26
 Text GLabel 2800 1900 0    50   Input ~ 0
 6
-Text GLabel 6150 1350 2    50   Input ~ 0
+Text GLabel 6150 1950 2    50   Input ~ 0
 6
-Text GLabel 6150 1250 2    50   Input ~ 0
+Text GLabel 6150 1850 2    50   Input ~ 0
 5
 Text GLabel 2800 1800 0    50   Input ~ 0
 5
 Text GLabel 2800 2100 0    50   Input ~ 0
 8
-Text GLabel 6150 1150 2    50   Input ~ 0
+Text GLabel 6150 1750 2    50   Input ~ 0
 8
 Text GLabel 4550 1900 2    50   Input ~ 0
 40
-Text GLabel 6150 1050 2    50   Input ~ 0
+Text GLabel 6150 1650 2    50   Input ~ 0
 40
-Text GLabel 7050 1050 2    50   Input ~ 0
+Text GLabel 7050 1550 2    50   Input ~ 0
 4
 Text GLabel 2800 1700 0    50   Input ~ 0
 4
 Text GLabel 2800 2400 0    50   Input ~ 0
 12
-Text GLabel 7050 1150 2    50   Input ~ 0
-12
-Text GLabel 7050 1250 2    50   Input ~ 0
-7
-Text GLabel 7050 1350 2    50   Input ~ 0
-15
-Text GLabel 7050 1450 2    50   Input ~ 0
-17
-Text GLabel 7050 1550 2    50   Input ~ 0
-20
 Text GLabel 7050 1650 2    50   Input ~ 0
-13
+12
 Text GLabel 7050 1750 2    50   Input ~ 0
-22
+7
 Text GLabel 7050 1850 2    50   Input ~ 0
-24
+15
 Text GLabel 7050 1950 2    50   Input ~ 0
-32
+17
 Text GLabel 7050 2050 2    50   Input ~ 0
-34
+20
+Text GLabel 7050 2150 2    50   Input ~ 0
+13
 Text GLabel 7050 2250 2    50   Input ~ 0
-9
+22
+Text GLabel 7050 2350 2    50   Input ~ 0
+24
 Text GLabel 7050 2450 2    50   Input ~ 0
+32
+Text GLabel 7050 2550 2    50   Input ~ 0
+34
+Text GLabel 7050 2750 2    50   Input ~ 0
+9
+Text GLabel 7050 2950 2    50   Input ~ 0
 10
 Text GLabel 2800 2000 0    50   Input ~ 0
 7
@@ -555,18 +521,10 @@ Text GLabel 4550 2000 2    50   Input ~ 0
 38
 Text GLabel 4550 2200 2    50   Input ~ 0
 34
-Text GLabel 7050 2350 2    50   Input ~ 0
+Text GLabel 7050 2850 2    50   Input ~ 0
 38
 Text GLabel 4550 2900 2    50   Input ~ 0
 24
-Text GLabel 9300 6200 0    50   Input ~ 0
-0
-Text GLabel 9300 5900 0    50   Input ~ 0
-1
-Text GLabel 9600 5900 2    50   Input ~ 0
-XL1
-Text GLabel 9600 6200 2    50   Input ~ 0
-XL2
 $Comp
 L Device:Crystal Y1
 U 1 1 5BE9DC2B
@@ -584,7 +542,7 @@ U 1 1 5BE9DD44
 P 5600 5300
 F 0 "C3" H 5692 5346 50  0000 L CNN
 F 1 "C_Small" H 5692 5255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5600 5300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5600 5300 50  0001 C CNN
 F 3 "~" H 5600 5300 50  0001 C CNN
 	1    5600 5300
 	1    0    0    -1  
@@ -595,7 +553,7 @@ U 1 1 5BE9DDB8
 P 6350 5300
 F 0 "C4" H 6442 5346 50  0000 L CNN
 F 1 "C_Small" H 6442 5255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6350 5300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6350 5300 50  0001 C CNN
 F 3 "~" H 6350 5300 50  0001 C CNN
 	1    6350 5300
 	1    0    0    -1  
@@ -636,7 +594,7 @@ Text GLabel 6350 4900 2    50   Input ~ 0
 XL2
 Text GLabel 4550 2100 2    50   Input ~ 0
 36
-Text GLabel 7050 2150 2    50   Input ~ 0
+Text GLabel 7050 2650 2    50   Input ~ 0
 36
 Wire Wire Line
 	3350 3100 3450 3100
@@ -644,29 +602,12 @@ Connection ~ 3450 3100
 Wire Wire Line
 	3450 3100 3650 3100
 $Comp
-L Connector:Conn_01x03_Male J10
-U 1 1 5BEDD589
-P 10250 4900
-F 0 "J10" H 10356 5178 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 10356 5087 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10250 4900 50  0001 C CNN
-F 3 "~" H 10250 4900 50  0001 C CNN
-	1    10250 4900
-	1    0    0    -1  
-$EndComp
-Text GLabel 10450 4800 2    50   Input ~ 0
-VBUS
-Text GLabel 10450 4900 2    50   Input ~ 0
-5V
-Text GLabel 10450 5000 2    50   Input ~ 0
-VEXT
-$Comp
 L Device:C_Small C5
 U 1 1 5BEDE7D7
 P 8350 3150
 F 0 "C5" V 8121 3150 50  0000 C CNN
 F 1 "C_Small" V 8212 3150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8350 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8350 3150 50  0001 C CNN
 F 3 "~" H 8350 3150 50  0001 C CNN
 	1    8350 3150
 	0    1    1    0   
@@ -707,25 +648,86 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 10000 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5C080CE5
-P 9450 5900
-F 0 "JP1" H 9450 6105 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 9450 6014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 9450 5900 50  0001 C CNN
-F 3 "~" H 9450 5900 50  0001 C CNN
-	1    9450 5900
+L Jumper:SolderJumper_2_Bridged JP3
+U 1 1 5C14ED9A
+P 8350 4150
+F 0 "JP3" H 8350 4355 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 8350 4264 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8350 4150 50  0001 C CNN
+F 3 "~" H 8350 4150 50  0001 C CNN
+	1    8350 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 4300 0    50   Input ~ 0
+VEXT
+Text GLabel 6850 4300 2    50   Input ~ 0
+5V
+Text GLabel 6600 3850 1    50   Input ~ 0
+VBUS
+Text GLabel 8200 1550 0    50   Input ~ 0
+VEXT
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5C159D14
+P 6150 3350
+F 0 "J4" H 6230 3342 50  0000 L CNN
+F 1 "Conn_01x02" H 6230 3251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 3350 50  0001 C CNN
+F 3 "~" H 6150 3350 50  0001 C CNN
+	1    6150 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 5C080D8A
-P 9450 6200
-F 0 "JP2" H 9450 6405 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 9450 6314 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 9450 6200 50  0001 C CNN
-F 3 "~" H 9450 6200 50  0001 C CNN
-	1    9450 6200
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5C159D7E
+P 7150 3350
+F 0 "J7" H 7230 3342 50  0000 L CNN
+F 1 "Conn_01x02" H 7230 3251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7150 3350 50  0001 C CNN
+F 3 "~" H 7150 3350 50  0001 C CNN
+	1    7150 3350
 	1    0    0    -1  
 $EndComp
+Text GLabel 5950 3450 0    50   Input ~ 0
+5V
+Text GLabel 6950 3350 0    50   Input ~ 0
+VBAT
+Text GLabel 6950 3450 0    50   Input ~ 0
+VBAT
+$Comp
+L Device:D_Schottky D1
+U 1 1 5C15AED1
+P 6100 4000
+F 0 "D1" V 6146 3921 50  0000 R CNN
+F 1 "D_Zener" V 6055 3921 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 6100 4000 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D2
+U 1 1 5C15AF8E
+P 6600 4000
+F 0 "D2" V 6646 3921 50  0000 R CNN
+F 1 "D_Zener" V 6555 3921 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 6600 4000 50  0001 C CNN
+F 3 "~" H 6600 4000 50  0001 C CNN
+	1    6600 4000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6100 3850 1    50   Input ~ 0
+VBAT
+Wire Wire Line
+	6850 4300 6600 4300
+Wire Wire Line
+	6100 4150 6100 4300
+Connection ~ 6100 4300
+Wire Wire Line
+	6100 4300 5850 4300
+Wire Wire Line
+	6600 4150 6600 4300
+Connection ~ 6600 4300
+Wire Wire Line
+	6600 4300 6100 4300
 $EndSCHEMATC
