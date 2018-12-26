@@ -206,7 +206,7 @@ U 1 1 5BE6FC55
 P 8350 2750
 F 0 "SW1" H 8350 3035 50  0000 C CNN
 F 1 "SW_Push" H 8350 2944 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 8350 2950 50  0001 C CNN
+F 2 "lib:TS-1187" H 8350 2950 50  0001 C CNN
 F 3 "" H 8350 2950 50  0001 C CNN
 	1    8350 2750
 	1    0    0    -1  
@@ -261,7 +261,7 @@ U 1 1 5BE7291E
 P 2800 1050
 F 0 "U1" H 3675 -1086 50  0000 C CNN
 F 1 "E73-C" H 3675 -1177 50  0000 C CNN
-F 2 "libp:E73-C" H 2800 1050 50  0001 C CNN
+F 2 "lib:E73-C-CH" H 2800 1050 50  0001 C CNN
 F 3 "" H 2800 1050 50  0001 C CNN
 	1    2800 1050
 	1    0    0    -1  
@@ -471,15 +471,15 @@ Text GLabel 4550 1900 2    50   Input ~ 0
 40
 Text GLabel 6150 1650 2    50   Input ~ 0
 40
-Text GLabel 7050 1550 2    50   Input ~ 0
+Text GLabel 7050 1450 2    50   Input ~ 0
 4
 Text GLabel 2800 1700 0    50   Input ~ 0
 4
 Text GLabel 2800 2400 0    50   Input ~ 0
 12
-Text GLabel 7050 1650 2    50   Input ~ 0
+Text GLabel 7050 1550 2    50   Input ~ 0
 12
-Text GLabel 7050 1750 2    50   Input ~ 0
+Text GLabel 7050 1650 2    50   Input ~ 0
 7
 Text GLabel 7050 1850 2    50   Input ~ 0
 15
@@ -730,4 +730,6 @@ Wire Wire Line
 Connection ~ 6600 4300
 Wire Wire Line
 	6600 4300 6100 4300
+Text GLabel 7050 1750 2    50   Input ~ 0
+18
 $EndSCHEMATC
