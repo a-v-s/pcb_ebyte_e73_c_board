@@ -732,4 +732,48 @@ Wire Wire Line
 	6600 4300 6100 4300
 Text GLabel 7050 1750 2    50   Input ~ 0
 18
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C281D49
+P 1500 4550
+F 0 "H1" H 1600 4596 50  0000 L CNN
+F 1 "MountingHole" H 1600 4505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 1500 4550 50  0001 C CNN
+F 3 "~" H 1500 4550 50  0001 C CNN
+	1    1500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C281EA7
+P 1500 4750
+F 0 "H2" H 1600 4796 50  0000 L CNN
+F 1 "MountingHole" H 1600 4705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 1500 4750 50  0001 C CNN
+F 3 "~" H 1500 4750 50  0001 C CNN
+	1    1500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5C281EEF
+P 1500 4950
+F 0 "H3" H 1600 4996 50  0000 L CNN
+F 1 "MountingHole" H 1600 4905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 1500 4950 50  0001 C CNN
+F 3 "~" H 1500 4950 50  0001 C CNN
+	1    1500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5C281F3B
+P 1500 5150
+F 0 "H4" H 1600 5196 50  0000 L CNN
+F 1 "MountingHole" H 1600 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_ISO7380" H 1500 5150 50  0001 C CNN
+F 3 "~" H 1500 5150 50  0001 C CNN
+	1    1500 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
